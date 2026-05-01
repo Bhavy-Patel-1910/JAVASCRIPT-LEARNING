@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+            font-family: "Gilroy";
+        }
+        html,body{
+            width:100%;
+            height:100%;
+
+        }
+        h3{ text-transform: capitalize;}
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 30%;
+            background-color: #222;
+        }
+
+        #main2{
+            color:#555;
+            font-size: 3rem;
+            font-weight: 600;
+            user-select: none ;
+        }
+
+        #main8{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 30%;
+            background-color: #222;
+        }
+
+        #input8{
+            display: none;
+        }
+
+        #btn8{
+            padding: 12px 22px;
+            background-color: rgb(27, 150, 109);
+            color: aliceblue;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        #main8 #btn8:hover{
+            background-color: rgb(3, 92, 62);
+        }
+
+        #main9{
+            padding: 30px;
+            width: 80%;
+            height: 80%;
+            background-color: #222;
+        }
+
+        .card9{
+            max-width: 250px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #555;
+            color: aliceblue;
+        }
+        .profile9{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-bottom: 7px;
+            overflow: hidden;
+            margin-bottom: 7px;
+        }
+
+        .profile9 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile9 h5{
+            margin-top: 3px;
+        }
+
+        .profile9 p{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>1. BHAVY</h1> 
+        <h2>2. BHAVY PATEL</h2>  
+        <p >3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consequuntur!</p> 
+        <p id="id2">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, officiis.</p>
+    </div>
+
+
+    <div>
+        <form>
+            5. <input id="input5" type="text", placeholder="name">
+        </form>
+    </div>
+
+    <h3 id="device">6. Select your device</h3>
+    <select>
+        <option selected disabled>Choose Your Device</option>
+        <option value="apple">Iphone</option>
+        <option value="oppo">Oppo</option>
+        <option value="vivo">Vivo</option>
+        <option value="samsung">Samsung</option>
+    </select> <br>
+
+
+    7. <div id="main">
+
+        <h1 id="main2" >a</h1>
+    </div>
+
+    8. <div id="main8">
+        <input id="input8" type="file">
+        <div id="btn8">
+            Upload File
+        </div>
+    </div>
+
+    9. <div id="main9">
+        <form id="form9">
+            <input id="input9" type="text" placeholder="Profile Pic">
+            <input id="input9" type="text" placeholder="Name">
+            <input id="input9" type="text" placeholder="Bio">
+            <input id="input9" type="text" placeholder="About Your Self"> <br>
+            <input id="input9" type="submit">
+        </form>
+    </div>
+    
+
+    <script src="Eventhandeling.js"></script>
+</body>
+</html>
