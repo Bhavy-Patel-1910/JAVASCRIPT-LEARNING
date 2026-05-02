@@ -145,3 +145,51 @@ inputs.forEach(function(inp){
         }
     });
 });
+
+//_____________________________________________________________________________
+
+
+// 10 mouse over and mouse move event listener_______________________________________________________
+
+main10 = document.querySelector("#main10");
+main10.addEventListener("mouseover" , function(){
+    main10.style.backgroundColor = "green";
+});
+
+main10.addEventListener("mouseout" , function(){
+    main10.style.backgroundColor = "blue";
+});
+
+//_____________________________________________________________________________
+
+
+// 11 mouse over and mouse move event listener_______________________________________________________
+
+
+let abcd = document.querySelector("#abcd");
+let main11 = document.querySelector("#main11");
+
+abcd.addEventListener("mousemove" , function(details){
+    main11.style.top = details.offsetY + "px"; // offsetX and offsetY used for the in when we can trying to move cube in th cirle.
+    main11.style.left = details.offsetX + "px"; // and clientX and ClientY used for when we can trying to move our cube in window so it is perfectly use.
+});
+
+//_____________________________________________________________________________
+
+
+// 12 key up event listener_______________________________________________________
+
+main12 = document.querySelector("#main12");
+window.addEventListener("keydown", function(details){
+if (details.key === "b"){
+        main12.style.backgroundColor = "purple";
+}    
+});
+
+window.addEventListener("keyup" , function(details){
+    if(details.key === "b"){
+            main12.style.backgroundColor = "pink";
+    }
+})
+
+//_____________________________________________________________________________
