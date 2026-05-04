@@ -193,3 +193,28 @@ window.addEventListener("keyup" , function(details){
 })
 
 //_____________________________________________________________________________
+
+
+// 13 Event bubbuling _______________________________________________________
+
+// in this senario addEventListener add on the main13 div but bubbling says if inner tags have not any event listener it will reachout upper tag if upper tag has not eventlisner it is also go to upper tag and exicute that's event.
+
+nav13 = document.querySelector("#nav13");
+nav13.addEventListener("click" ,function(){
+    alert("Clicked");
+});
+
+//_____________________________________________________________________________
+
+// 14 Event bubbuling _______________________________________________________
+
+let main14 = document.querySelector("main14");
+let ul14 = document.querySelector("#ul14");
+ul14.addEventListener("click" , function(details){
+    //details.target.classList.add("lt14")
+    //details.target.style.textDecoration = "line-through";
+    details.target.classList.toggle("lt14")
+})
+
+//_____________________________________________________________________________
+
