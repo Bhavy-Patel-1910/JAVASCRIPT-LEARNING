@@ -218,3 +218,97 @@ ul14.addEventListener("click" , function(details){
 
 //_____________________________________________________________________________
 
+// 15 Event bubbuling _______________________________________________________
+
+let a = document.querySelector(".a");
+let b = document.querySelector(".b");
+let c = document.querySelector(".c");
+let button15 = document.querySelector(".button15");
+
+button15.addEventListener("click" , function(){
+    console.log("Button clicked")
+});
+
+c.addEventListener("click" , function(){
+    console.log("C Clicked")
+});
+
+b.addEventListener("click" , function(){
+    console.log("B Clicked")
+});
+
+a.addEventListener("click" , function(){
+    console.log("A Clicked")
+})
+
+// if in the bubbuling when we click button or any div it if it have a eventlisner so it will be exicute and move to the next div and it's next div has any event listener so it will be exicute but if div has no any event listener so it will be stoped and not to move next div.
+// in this 15th number example button has a event listener so it will be exicute and move  to next div and next div has any event listener so it is also exhicutre ..... and then last if html tag has any event listner so it is also exhicute.
+// so event bubbling me yahi hote]a hai ki event move hoti hai by default 1 div to other next div.
+// event bubbling me event andar se bahar move karta hai.
+
+//_____________________________________________________________________________
+
+
+// 16 Event capture _______________________________________________________
+
+//when we we clicked any event or we do event raised so that this event  flow run in two phase.
+
+//phase 1: event move to the parents element to event raised element.
+//phase 2: event move to the event raised element to parent element.
+
+// and in this senario always 1stly run phase 1.
+// but it is by default off so it is not to exhicute directly but we do it's on so always it is give answer like a phase 1 type.
+
+//1st capture phase run after bubbling phase run.
+
+let a16 = document.querySelector(".a16");
+let b16 = document.querySelector(".b16");
+let c16 = document.querySelector(".c16");
+let button16 = document.querySelector(".button16");
+
+button16.addEventListener("click" , function(){
+    console.log("Button clicked")
+});
+
+c16.addEventListener("click" , function(){
+    console.log("C Clicked")
+}, true);
+
+b16.addEventListener("click" , function(){
+    console.log("B Clicked")
+});
+
+a16.addEventListener("click" , function(){
+    console.log("A Clicked")
+} ,
+true
+);
+
+
+//_____________________________________________________________________________
+
+
+// 17 practice set1 _______________________________________________________
+
+input17 = document.querySelector("#input17");
+span = document.querySelector("span");
+
+input17.addEventListener("input" , function(){
+    let left = 20 -input17.value.length;
+    span.textContent = left;
+
+    if(left<0){
+        span.style.color = "red";
+    }
+    else{
+        span.style.color = "white";
+    }
+})
+
+//_____________________________________________________________________________
+
+// 18 practice set2 _______________________________________________________
+
+//to do list. this is done in 14.
+
+//_____________________________________________________________________________
