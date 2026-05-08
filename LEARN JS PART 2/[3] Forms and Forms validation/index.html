@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #main1{
+            background-color: #222;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #small1{
+            color: rgb(255, 0, 0);
+            font-weight: 400;
+        }
+
+        #hide1{
+            display: none;
+        }
+
+        #main2{
+            background-color: #222;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        
+
+    </style>
+
+</head>
+
+<body>
+1. <div id="main1">
+
+    <form id="form1">
+
+        <input id="name1" type="text" placeholder="Name">
+        <div id="hide1">
+            <br>
+            <small id="small1"> Your Name Should Be Greator Than 2 Charactors. </small>
+        </div> <br> <br>
+        <input type="email" placeholder="E-mail"> <br> <br>
+        <input type="password" placeholder="Password"> <br> <br>
+        <input type="text" placeholder="Tell Me About Your Self....."> <br> <br>
+        <select >
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select> <br> <br>
+        <input type="submit">
+
+    </form>
+</div>
+
+    2. <div id="main2">
+
+    <form id="form2">
+
+        <input id="name2" type="text" placeholder="Name" required minlength="3" maxlength="10"><br> <br>
+        <input type="email" placeholder="E-mail"> <br> <br>
+        <input type="password" placeholder="Password"> <br> <br>
+        <input type="text" placeholder="Tell Me About Your Self....."> <br> <br>
+        <select >
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select> <br> <br>
+        <input type="submit">
+
+    </form>
+</div>
+
+
+    <script src="Formsvalidation.js"></script>
+</body>
+</html>
